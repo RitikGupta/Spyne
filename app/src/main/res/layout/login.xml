@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#ffffff">
+
+    <TextView
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Login Now" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please login to continue using Spyne"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter via social networks"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or login with email"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        style="@style/EmailPswdButtons">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="Email"
+            android:padding="20dp"
+            android:inputType="textEmailAddress"
+            android:textStyle="bold"
+            android:id="@+id/login_email"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        style="@style/EmailPswdButtons">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="Password"
+            android:padding="20dp"
+            android:inputType="textPassword"
+            android:textStyle="bold"
+            android:id="@+id/login_pass"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp">
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Remember me"
+        android:layout_gravity="left"
+        android:textColor="#6c6c6c"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="#6c6c6c"
+        android:background="#ffffff"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:layout_gravity="right"
+        android:layout_marginLeft="45dp"
+        android:paddingBottom="10dp"/>
+
+</LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        style="@style/SignupButtons"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/login_btn_LoginPage"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sign_Up_btn_LoginPage"
+            android:text="Sign Up"
+            android:textColor="#0bb1f2"
+            android:background="#ffffff"
+            android:textAllCaps="false"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>
